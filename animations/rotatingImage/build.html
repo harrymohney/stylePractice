@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotating Image Animation</title>
+<style>
+    .image {
+        width: 200px;
+        height: 200px;
+        background: url('path/to/image.jpg') center/cover;
+        animation: rotate 4s linear infinite;
+    }
+
+    @keyframes rotate {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
+</style>
+</head>
+<body>
+<div class="image"></div>
+</body>
+</html>
