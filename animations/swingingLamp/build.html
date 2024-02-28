@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swinging Lamp Animation</title>
+<style>
+    .lamp {
+        width: 50px;
+        height: 100px;
+        background-color: #ffff00;
+        border-radius: 50px;
+        position: relative;
+        animation: swing-lamp 2s ease-in-out infinite alternate;
+        transform-origin: top;
+    }
+
+    @keyframes swing-lamp {
+        0% { transform: rotate(-10deg); }
+        100% { transform: rotate(10deg); }
+    }
+</style>
+</head>
+<body>
+<div class="lamp"></div>
+</body>
+</html>
