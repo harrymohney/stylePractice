@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Growing/Shrinking Rectangle Animation</title>
+<style>
+    .rectangle {
+        width: 100px;
+        height: 50px;
+        background-color: orange;
+        animation: grow-shrink 2s infinite alternate;
+    }
+
+    @keyframes grow-shrink {
+        0%, 100% {transform: scale(1);}
+        50% {transform: scale(1.5);}
+    }
+</style>
+</head>
+<body>
+<div class="rectangle"></div>
+</body>
+</html>
