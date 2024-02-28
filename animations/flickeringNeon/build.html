@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flickering Neon Sign Animation</title>
+<style>
+    .neon-sign {
+        font-size: 48px;
+        color: #f06;
+        text-shadow: 0 0 5px #f06, 0 0 10px #f06, 0 0 20px #f06, 0 0 40px #f06, 0 0 80px #f06, 0 0 160px #f06;
+        animation: flicker 1s infinite;
+    }
+
+    @keyframes flicker {
+        0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {opacity: 1;}
+        20%, 22%, 24%, 55% {opacity: 0;}
+    }
+</style>
+</head>
+<body>
+<div class="neon-sign">NEON</div>
+</body>
+</html>
