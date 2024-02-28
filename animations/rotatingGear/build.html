@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotating Gear Animation</title>
+<style>
+    .gear {
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+        border-radius: 50%;
+        position: relative;
+        animation: rotate-gear 2s linear infinite;
+    }
+
+    .teeth {
+        width: 10px;
+        height: 30px;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 45px;
+        transform-origin: 50% 100%;
+        border-radius: 5px;
+    }
+
+    @keyframes rotate-gear {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
+
+    .teeth:nth-child(odd) {
+        transform: rotate(45deg);
+    }
+</style>
+</head>
+<body>
+<div class="gear">
+    <div class="teeth"></div>
+    <div class="teeth"></div>
+    <div class="teeth"></div>
+    <div class="teeth"></div>
+    <div class="teeth"></div>
+</div>
+</body>
+</html>
