@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color-Changing Text Animation</title>
+<style>
+    .text {
+        animation: change-color 2s infinite alternate;
+    }
+
+    @keyframes change-color {
+        0% {color: red;}
+        50% {color: blue;}
+        100% {color: green;}
+    }
+</style>
+</head>
+<body>
+<div class="text">This text changes color.</div>
+</body>
+</html>
