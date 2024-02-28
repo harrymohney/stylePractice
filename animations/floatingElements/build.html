@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Floating Animation</title>
+<style>
+    .float-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .float-item {
+        width: 50px;
+        height: 50px;
+        background-color: #3498db;
+        margin: 10px;
+        animation: float 2s infinite alternate;
+    }
+
+    @keyframes float {
+        0% {transform: translateY(0);}
+        100% {transform: translateY(-20px);}
+    }
+</style>
+</head>
+<body>
+<div class="float-container">
+    <div class="float-item"></div>
+    <div class="float-item"></div>
+    <div class="float-item"></div>
+</div>
+</body>
+</html>
