@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bouncing Jelly Animation</title>
+<style>
+    .jelly {
+        width: 100px;
+        height: 100px;
+        background-color: #87CEEB;
+        border-radius: 50%;
+        position: relative;
+        animation: bounce-jelly 2s infinite alternate;
+    }
+
+    @keyframes bounce-jelly {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+</style>
+</head>
+<body>
+<div class="jelly"></div>
+</body>
+</html>
