@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotating Planet Animation</title>
+<style>
+    .planet {
+        width: 100px;
+        height: 100px;
+        background-color: #FFA07A;
+        border-radius: 50%;
+        position: relative;
+        animation: rotate-planet 4s linear infinite;
+    }
+
+    .moon {
+        width: 20px;
+        height: 20px;
+        background-color: #D3D3D3;
+        border-radius: 50%;
+        position: absolute;
+        top: 40%;
+        left: 130%;
+        animation: orbit-moon 2s linear infinite;
+    }
+
+    @keyframes rotate-planet {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @keyframes orbit-moon {
+        0% { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+        100% { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+    }
+</style>
+</head>
+<body>
+<div class="planet">
+    <div class="moon"></div>
+</div>
+</body>
+</html>
