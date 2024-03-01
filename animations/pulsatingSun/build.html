@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulsating Sun Animation</title>
+<style>
+    .sun {
+        width: 100px;
+        height: 100px;
+        background-color: #FFD700;
+        border-radius: 50%;
+        position: relative;
+        animation: pulse-sun 2s infinite alternate;
+    }
+
+    @keyframes pulse-sun {
+        0% { transform: scale(1); }
+        100% { transform: scale(1.2); }
+    }
+</style>
+</head>
+<body>
+<div class="sun"></div>
+</body>
+</html>
