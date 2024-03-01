@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shimmering Water Animation</title>
+<style>
+    .water {
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(to bottom, #87CEEB 0%, #4682B4 50%, #87CEEB 100%);
+        background-size: 100% 200%;
+        animation: shimmer-water 2s linear infinite;
+    }
+
+    @keyframes shimmer-water {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 0 -200%;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="water"></div>
+</body>
+</html>
