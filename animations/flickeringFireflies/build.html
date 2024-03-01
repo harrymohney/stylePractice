@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flickering Fireflies Animation</title>
+<style>
+    .fireflies {
+        width: 200px;
+        height: 200px;
+        background-color: #000;
+        position: relative;
+    }
+
+    .firefly {
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        animation: flicker-firefly 1s infinite alternate;
+    }
+
+    .firefly:nth-child(1) { top: 50px; left: 50px; }
+    .firefly:nth-child(2) { top: 80px; left: 100px; }
+    .firefly:nth-child(3) { top: 120px; left: 150px; }
+
+    @keyframes flicker-firefly {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+</style>
+</head>
+<body>
+<div class="fireflies">
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+</div>
+</body>
+</html>
