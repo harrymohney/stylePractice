@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotating Clock Animation</title>
+<style>
+    .clock {
+        width: 100px;
+        height: 100px;
+        background-color: #f0f0f0;
+        border-radius: 50%;
+        position: relative;
+        animation: rotate-clock 1s linear infinite;
+    }
+
+    .hour-hand,
+    .minute-hand,
+    .second-hand {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: center;
+        transform: translate(-50%, -100%);
+        background-color: black;
+    }
+
+    .hour-hand {
+        width: 5px;
+        height: 30px;
+    }
+
+    .minute-hand {
+        width: 3px;
+        height: 40px;
+    }
+
+    .second-hand {
+        width: 1px;
+        height: 45px;
+        background-color: red;
+        animation: rotate-second-hand 60s linear infinite;
+    }
+
+    @keyframes rotate-second-hand {
+        0% { transform: translate(-50%, -100%) rotate(0deg); }
+        100% { transform: translate(-50%, -100%) rotate(360deg); }
+    }
+
+    @keyframes rotate-clock {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+</head>
+<body>
+<div class="clock">
+    <div class="hour-hand"></div>
+    <div class="minute-hand"></div>
+    <div class="second-hand"></div>
+</div>
+</body>
+</html>
