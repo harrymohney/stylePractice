@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bouncing Heart Animation</title>
+<style>
+    .heart {
+        width: 100px;
+        height: 100px;
+        background-color: #ff6961;
+        position: relative;
+        animation: bounce-heart 1s ease infinite alternate;
+    }
+
+    @keyframes bounce-heart {
+        0% { top: 0; }
+        100% { top: 50px; }
+    }
+</style>
+</head>
+<body>
+<div class="heart"></div>
+</body>
+</html>
