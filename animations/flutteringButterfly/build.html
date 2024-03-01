@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fluttering Butterfly Animation</title>
+<style>
+    .butterfly {
+        width: 100px;
+        height: 80px;
+        position: relative;
+        animation: flutter 2s infinite alternate;
+    }
+
+    .wing {
+        width: 50px;
+        height: 80px;
+        background-color: #FF69B4;
+        position: absolute;
+        top: 0;
+    }
+
+    .left-wing {
+        left: 0;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    .right-wing {
+        right: 0;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        transform: scaleX(-1);
+    }
+
+    @keyframes flutter {
+        0% { top: 0; }
+        100% { top: 20px; }
+    }
+</style>
+</head>
+<body>
+<div class="butterfly">
+    <div class="wing left-wing"></div>
+    <div class="wing right-wing"></div>
+</div>
+</body>
+</html>
