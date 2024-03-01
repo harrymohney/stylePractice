@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twinkling Star Animation</title>
+<style>
+    .star {
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .star::before,
+    .star::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        position: absolute;
+        animation: twinkle-star 1s infinite alternate;
+    }
+
+    .star::before {
+        top: 20%;
+        left: 30%;
+    }
+
+    .star::after {
+        top: 70%;
+        left: 70%;
+    }
+
+    @keyframes twinkle-star {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+</style>
+</head>
+<body>
+<div class="star"></div>
+</body>
+</html>
+
