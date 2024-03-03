@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shimmering Moon Animation</title>
+<style>
+    .moon {
+        width: 100px;
+        height: 100px;
+        background: url('moon.png') no-repeat center center;
+        background-size: cover;
+        border-radius: 50%;
+        position: relative;
+        animation: shimmer-moon 3s linear infinite;
+    }
+
+    @keyframes shimmer-moon {
+        0%, 100% { filter: brightness(100%); }
+        50% { filter: brightness(150%); }
+    }
+</style>
+</head>
+<body>
+<div class="moon"></div>
+</body>
+</html>
