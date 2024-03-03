@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twinkling Christmas Lights Animation</title>
+<style>
+    .lights {
+        width: 200px;
+        height: 100px;
+        position: relative;
+    }
+
+    .light {
+        width: 20px;
+        height: 20px;
+        background-color: #ff0000;
+        border-radius: 50%;
+        position: absolute;
+        animation: twinkling-light 1s infinite alternate;
+    }
+
+    .light:nth-child(2) { top: 20px; left: 40px; }
+    .light:nth-child(3) { top: 50px; left: 80px; }
+    .light:nth-child(4) { top: 80px; left: 120px; }
+
+    @keyframes twinkling-light {
+        0% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+</style>
+</head>
+<body>
+<div class="lights">
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+</div>
+</body>
+</html>
