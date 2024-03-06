@@ -1,0 +1,18 @@
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+.tooltip-text {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+}
+.tooltip:hover .tooltip-text {
+  display: block;
+}
