@@ -1,0 +1,18 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+.timeline-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  .timeline {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .timeline-item {
+      flex-basis: 30%;
+  }
+}
