@@ -1,0 +1,11 @@
+.custom-checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: #333;
+}
