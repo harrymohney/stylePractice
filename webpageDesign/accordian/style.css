@@ -1,0 +1,17 @@
+.accordion {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.accordion-header {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+input[type="checkbox"]:checked + .accordion-header + .accordion-content {
+  display: block;
+}
