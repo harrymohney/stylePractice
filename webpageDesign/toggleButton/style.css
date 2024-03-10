@@ -1,0 +1,23 @@
+.toggle-btn {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+input[type="checkbox"]:checked + .slider {
+  background-color: #2196F3;
+}
