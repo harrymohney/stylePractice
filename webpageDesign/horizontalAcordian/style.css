@@ -1,0 +1,14 @@
+.horizontal-accordion {
+  display: flex;
+  flex-direction: row;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.content {
+  display: none;
+  flex: 1;
+}
+input[type="checkbox"]:checked + label + .content {
+  display: block;
+}
