@@ -1,0 +1,10 @@
+.image-zoom {
+  background-image: url('image.jpg');
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  transition: transform 0.5s;
+}
+.image-zoom:hover {
+  transform: scale(1.2);
+}
